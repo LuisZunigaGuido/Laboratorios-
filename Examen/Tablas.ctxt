@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Tablas
+comment1.params=ancho\ alto
+comment1.target=Tablas(int,\ int)
+comment2.params=alto
+comment2.target=void\ setAlto(int)
+comment3.params=ancho
+comment3.target=void\ setAncho(int)
+comment4.params=
+comment4.target=int\ getAlto()
+comment5.params=
+comment5.target=int\ getAncho()
+comment6.params=
+comment6.target=double\ getPrecio()
+comment7.params=
+comment7.target=int\ area()
+comment8.params=anchoSolicitado\ altoSolicitado
+comment8.target=boolean\ verificar(int,\ int)
+comment9.params=
+comment9.target=double\ calcularPrecio()
+numComments=10

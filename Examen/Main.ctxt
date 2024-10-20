@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=ancho\ alto
+comment2.target=Tablas\ buscarTablaEnAlmacen(int,\ int)
+comment3.params=tabla\ ancho\ alto
+comment3.target=void\ cortarTabla(Tablas,\ int,\ int)
+comment4.params=anchoRestante\ altoRestante
+comment4.target=void\ almacenarSobrante(int,\ int)
+numComments=5

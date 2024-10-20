@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Hotel
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=scannerHoteleria\ habitacion1\ habitacion2\ habitacion3\ habitacion4\ habitacion5
+comment2.target=Habitacion\ seleccionarHabitacion(java.util.Scanner,\ Habitacion,\ Habitacion,\ Habitacion,\ Habitacion,\ Habitacion)
+comment3.params=habitacionParam
+comment3.target=void\ cambiarTipoAux(Habitacion)
+comment4.params=habitacionParam
+comment4.target=void\ nuevoPrecio(Habitacion)
+comment5.params=habitacionParam
+comment5.target=void\ nuevoNumeroCamas(Habitacion)
+comment6.params=habitacionParam
+comment6.target=void\ reservarHabitacion(Habitacion)
+comment7.params=habitacionParam
+comment7.target=void\ liberarHabitacion(Habitacion)
+numComments=8

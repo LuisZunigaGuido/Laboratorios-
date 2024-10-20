@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Carta
+comment1.params=valor
+comment1.target=Carta(int)
+comment2.params=
+comment2.target=int\ getValor()
+comment3.params=valor
+comment3.target=void\ setValor(int)
+numComments=4

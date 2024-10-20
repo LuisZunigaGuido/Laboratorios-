@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Robot
+comment1.params=nombre\ puntosVida\ estadoRobot
+comment1.target=Robot(java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=int\ getPuntosVida()
+comment4.params=puntosVida
+comment4.target=void\ setPuntosVida(int)
+comment5.params=atacado
+comment5.target=void\ atacar(Robot)
+comment6.params=
+comment6.target=boolean\ estadoRobot()
+comment7.params=
+comment7.target=int\ da\u00F1oAtaque()
+numComments=8

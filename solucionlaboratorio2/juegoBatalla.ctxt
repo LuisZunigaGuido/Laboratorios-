@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=juegoBatalla
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=robotsArray
+comment2.target=void\ iniciarBatalla(Robot[])
+comment3.params=atacante\ robotsArray
+comment3.target=int\ seleccionaOtroRobot(int,\ Robot[])
+comment4.params=robotsArray
+comment4.target=void\ contadorDeRobots(Robot[])
+comment5.params=robotsArray\ objetivo
+comment5.target=void\ EstadoRobot(Robot[],\ int)
+comment6.params=robotsArray
+comment6.target=void\ buscarGanador(Robot[])
+numComments=7
