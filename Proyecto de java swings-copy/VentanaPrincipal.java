@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.io.IOException;
+import java.io.FileWriter;
 public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal() {
         setTitle("Formulario del usuario ");
@@ -8,8 +10,6 @@ public class VentanaPrincipal extends JFrame {
         
         //barra de menus
         JMenuBar menuBar = new JMenuBar();
-        JMenu menuSalir = new JMenu ("Salir");
-        JMenuItem salirOpcional = new JMenuItem ("salir opcional");
         JMenu menuArchivo = new JMenu ("Archivo");
         JMenuItem nuevoItem = new JMenuItem ("Nuevo");
         JMenuItem guardarItem = new JMenuItem ("Guardar");
@@ -20,13 +20,56 @@ public class VentanaPrincipal extends JFrame {
         menuArchivo.add(guardarItem);
         menuArchivo.addSeparator();
         menuArchivo.add(salirItem);
-        menuSalir.add(salirOpcional);
         menuBar.add(menuArchivo);
-        menuBar.add(menuSalir);
         setJMenuBar(menuBar);
-    }
+        
+        salirItem.addActionListener(e -> System.exit(0));
+        
+        JPanel panelFormulario = new JPanel();
+        panelFormulario.setLayout(new BoxLayout (panelFormulario, BoxLayout.Y_AXIS));
+        
+        JLabel etiquetaNombre = new JLabel ("nombre");
+        JTextField campoNombre = new JTextField(10);
+        
+        JLabel etiquetaEmail = new JLabel("Email");
+        JTextField campoEmail = new JTextField(30);
+        
+        JLabel etiquetaTelefono = new JLabel ("Telefono");
+        JTextField campoTelefono = new JTextField(20);
+        
+        panelFormulario.add(etiquetaNombre);
+        panelFormulario.add(campoNombre);
+        panelFormulario.add(etiquetaEmail);
+        panelFormulario.add(campoEmail);
+        panelFormulario.add(etiquetaTelefono);
+        panelFormulario.add(campoTelefono);
+        add(panelFormulario);
+        
+        JButton botonGuardar = new JButton("Guardar");
+        botonGuardar.addActionListener(e -> {
+            String Nombre = campoNombre.getText();
+            String Email = campoEmail.getText();
+            String Telefono = campoTelefono.getText();
+            
+            try{
+                FileWriter writer = new FileWriter("datos_usuario.txt", true);
+                writer.write("  nombre: "+Nombre+ ", email: " +Email+ ", Telefono: " +Telefono); //\n
+                writer.write("                                  ");
+                writer.close();
+                JOptionPane.showMessageDialog(null, "Datos guaradados exitosamente.");
+            } catch (IOException ex){
+                JOptionPane.showMessageDialog(null, "Error al guardar los archivos.");
+            }
+        });
+        panelFormulario.add(botonGuardar);
+        
+        String[] items = {"Item 1", "Item 2", "Item 3"};
+        JComboBox <String> comboBox = new JComboBox<> (items);
+        comboBox.setBounds(50,50,50,50);    
+        add(comboBox);
+    } 
     
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         VentanaPrincipal ventana = new VentanaPrincipal();
         ventana.setVisible(true); //mostrar la ventana 
     }      
